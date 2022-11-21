@@ -1,4 +1,4 @@
-# CHARM
+# AutoMM
 
 ## Overview
 In this repo, we use general-purpose Matrix-Matrix Multiplication (GEMM) applications as an example and provide a detailed description of how to build a system-level design on AMD Versal VCK190 Platform. By going through this repo, users can get knowledge on:
@@ -138,16 +138,6 @@ SysGen:1;
 	LHS_BUFF:0;
 	RHS_BUFF:0;
 	OUT_BUFF:1;
-```
-
-# Applications
-We provide four applications under example folder including BERT for natural language processing, NCF for recommendations, ViT for vision classification, MLP for multi-layer perceptron classification or regression. The expected throughput should be the same as the results shown in the following figure: <br> 
-
-![image](https://user-images.githubusercontent.com/77606152/197424370-bc03e3f3-cc04-4876-85ec-a59a006b7319.png)<br>
-
-To quickly reproduce the results, we provide the pre-built object files of AIE, PL and ARM CPU in pre_built folder. Users can go to the corresponding folder and run the following command to create the sd card image for on board execution.
-```
-make package EDGE_COMMON_SW_PATH=${PATH} SYSROOT_PATH={PATH}
 ```
 
 
